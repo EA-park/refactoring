@@ -56,9 +56,9 @@ def main():
             del holes[0]
             holes = [x.move(-10, 0) for x in holes]
 
-            """# 충돌?
+            # 충돌 확인
             if holes[0].top > ship_y or holes[0].bottom < ship_y + 80:
-                game_over = True"""
+                game_over = True
 
         # 그리기
         SURFACE.fill((0, 255, 0))
